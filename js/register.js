@@ -29,9 +29,9 @@ export function loadPartial(path, name = basename(path)) {
 export function loadHelper(path, name = basename(path)) {
 	//eslint-disable-next-line global-require
 	const helperModule = require(path); 
-	const helper = interopDefault(helperModule);
+	//helperModule = interopDefault(helperModule);
 
-	registerHelper(name, helper);
+	registerHelper(name, helperModule);
 }
 
 function isFile(path) {
