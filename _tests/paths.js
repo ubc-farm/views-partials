@@ -1,6 +1,6 @@
 import {resolve} from 'path';
 import test from 'tape';
-import {partials, helpers} from '../js/paths.js';
+import {partials, helpers} from '../index.es.js';
 
 const moduleRoot = resolve(__dirname, '../');
 
