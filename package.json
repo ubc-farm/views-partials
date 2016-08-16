@@ -17,6 +17,7 @@
   },
   "scripts": {
     "prepublish": "rollup -c",
+    "preinstall": "npm run prepublish",
     "test": "tape _tests/**/*.node.js"
   }
 }
