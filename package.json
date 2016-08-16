@@ -1,6 +1,6 @@
 {
   "name": "ubc-farm-views-utils",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Partials and helpers for handlebar templates",
   "author": "Tiger Oakes <tigeroakes@gmail.com> (http://tigeroakes.com)",
   "license": "MIT",
