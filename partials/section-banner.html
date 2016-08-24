@@ -3,15 +3,17 @@
 
 <header class='section-banner' role='toolbar'>
 	<nav class='banner-breadcrumbs'>
+		<a class='banner-breadcrumb' href='{{ href }}'>
+			<i class="material-icons">menu</i>
+		</a>
 		{{#if title}}
+			<i class='material-icons breadcrumb-icon'>keyboard_arrow_right</i>
 			<a class='banner-breadcrumb' href='{{ href }}'>
 				<h1 class='title banner-header'>{{ title }}</h1>
 			</a>
 		{{else}}
 			{{#each breadcrumbs}}
-				{{#unless @first}}
 				<i class='material-icons breadcrumb-icon'>keyboard_arrow_right</i>
-				{{/unless}}
 
 				<a class='banner-breadcrumb' href='{{ this.href }}'>
 					<h1 class='title banner-header'>{{ this.title }}</h1>
@@ -20,8 +22,8 @@
 		{{/if}}
 	</nav>
 
-	{{!-- 
-		If passed an inline partial named "content", it will be rended after the 
+	{{!--
+		If passed an inline partial named "content", it will be rended after the
 		breadcrumb list.
 
 		Example:
