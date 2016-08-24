@@ -8,7 +8,7 @@
 
 .banner-breadcrumbs {
 	display: flex;
-	align-items: flex-end;
+	align-items: center;
 	margin: 0.1em auto 0.1em 0;
 }
 
