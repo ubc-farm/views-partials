@@ -1,4 +1,4 @@
-import {resolve} from 'path';
+import { resolve } from 'path';
 import dirname from '../dirname.js';
 
 /** @type {string} Path to the partials folder */
