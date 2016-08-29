@@ -3,20 +3,20 @@
 
 <header class='section-banner' role='toolbar'>
 	<nav class='banner-breadcrumbs'>
-		<a class='banner-breadcrumb' href='{{ href }}'>
+		<a class='banner-breadcrumb' href='/'>
 			<i class="material-icons">menu</i>
 		</a>
-		{{#if title}}
+		{{#if href}}
 			<i class='material-icons breadcrumb-icon'>keyboard_arrow_right</i>
 			<a class='banner-breadcrumb' href='{{ href }}'>
 				<h1 class='title banner-header'>{{ title }}</h1>
 			</a>
 		{{else}}
-			{{#each breadcrumbs}}
+			{{#bannerLoop text}}
 				<i class='material-icons breadcrumb-icon'>keyboard_arrow_right</i>
 
-				<a class='banner-breadcrumb' href='{{ this.href }}'>
-					<h1 class='title banner-header'>{{ this.title }}</h1>
+				<a class='banner-breadcrumb' href='{{ href }}'>
+					<h1 class='title banner-header'>{{ title }}</h1>
 				</a>
 			{{/each}}
 		{{/if}}
